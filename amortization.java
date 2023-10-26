@@ -3,12 +3,11 @@ import java.util.Scanner;
 
 public final class AmortizationSchedule {
 
-    /**
-     * No argument constructor--private to prevent instantiation.
-     */
+  
     private AmortizationSchedule() {
     }
 
+    //calculate monthly payment formula
     public static double monthlyPayment(double balance, double rate,
             double length) {
         double monthlyRate = rate / 12;
@@ -20,12 +19,7 @@ public final class AmortizationSchedule {
         return payment;
     }
 
-    /**
-     * Main method.
-     *
-     * @param args
-     *            the command line arguments
-     */
+    
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
